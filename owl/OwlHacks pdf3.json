@@ -1,0 +1,486 @@
+{
+	"header": {
+		"source": "pdf3",
+		"university": "California State University, Northridge",
+		"college": "Santa Barbara City College",
+		"route": "LIBERAL STUDIES, B.A. - Option in Interdisciplinary Studies"
+	},
+	"sections": [{
+		"section_name": "LOWER DIVISION MAJOR PREPARATION COURSES",
+		"info": null,
+		"articulations": [{
+			"univ": {
+				"modifiers": [],
+				"course": "HUM 101"
+			},
+			"cc": {
+				"name": "No Course Articulated",
+				"modifiers": []
+			}
+		}]
+	}, {
+		"section_name": "Philosophy and Culture",
+		"info": "Select 1 Course(s) from the following",
+		"articulations": [{
+			"univ": {
+				"modifiers": [],
+				"course": "CH S 111"
+			},
+			"cc": {
+				"modifiers": [],
+				"name": "CHST 131"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "HUM 105"
+			},
+			"cc": {
+				"modifiers": [],
+				"name": "No Course Articulated"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "LING 200"
+			},
+			"cc": {
+				"modifiers": [],
+				"name": "No Course Articulated"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "PHIL 165"
+			},
+			"cc": {
+				"or": ["PHIL 101", "PHIL 101H"]
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "PHIL 202"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "PHIL 201"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "RS 150"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "PHIL 102"
+			}
+		}]
+	}, {
+		"section_name": "Social Sciences",
+		"info": "Select 1 Course(s) from the following",
+		"articulations": [{
+			"univ": {
+				"modifiers": [],
+				"course": "ANTH 150"
+			},
+			"cc": {
+				"modifiers": [],
+				"name": "No Course Articulated"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "ECON 175"
+			},
+			"cc": {
+				"modifiers": [],
+				"name": "No Course Articulated"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "HIST 111"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "HIST 108"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "POLS 225"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "POLS 121"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "PSY 150"
+			},
+			"cc": {
+				"or": ["PSY 100", "PSY 100H"]
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "SOC 150"
+			},
+			"cc": {
+				"or": ["SOC 101", "SOC 101H"]
+			}
+		}]
+	}, {
+		"section_name": "Languages Other Than English",
+		"info": "Select 1 Course(s) from the following",
+		"articulations": [{
+			"univ": {
+				"modifiers": [],
+				"course": "ARMN 101"
+			},
+			"cc": {
+				"modifiers": [],
+				"name": "No Course Articulated"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "CHIN 101"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "CHIN 101"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "CLAS 101G"
+			},
+			"cc": {
+				"modifiers": [],
+				"name": "No Course Articulated"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "CLAS 101L"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "LATN 101"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "DEAF 160"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "ASL 101"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "FREN 101"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "FR 101"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "HEBR 101"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "HEBR 101"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "ITAL 101"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "ITAL 101"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "JAPN 101"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "JAPN 101"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "KOR 101"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "KOR 101"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "RUSS 101"
+			},
+			"cc": {
+				"modifiers": [],
+				"name": "No Course Articulated"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "SPAN 101"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "SPAN 101"
+			}
+		}]
+	}, {
+		"section_name": "Track A: The Humanites",
+		"info": null,
+		"articulations": [{
+			"univ": {
+				"modifiers": [],
+				"course": "HUM 105"
+			},
+			"cc": {
+				"modifiers": [],
+				"name": "No Course Articulated"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "HUM 106"
+			},
+			"cc": {
+				"modifiers": [],
+				"name": "No Course Articulated"
+			}
+		}]
+	}, {
+		"section_name": "Track A: The Humanities GIANT OR",
+		"info": "Select 1 Course(s) from the following",
+		"articulations": [{
+			"univ": {
+				"modifiers": [],
+				"course": "ART 110"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "ART 103"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "ART 112"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "ART 215"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "ART 114"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "ART 108"
+			}
+		}, {
+			"univ": {
+				"and": ["KIN 236", "KIN 236L"]
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "PE 252A"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "MUS 105"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "MUS 110"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "TH 110"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "TA 103"
+			}
+		}]
+	}, {
+		"section_name": "Track B: Human Rights",
+		"info": null,
+		"articulations": [{
+			"univ": {
+				"modifiers": [],
+				"course": "SOC 150"
+			},
+			"cc": {
+				"or": ["SOC 101", "SOC 101H"]
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "PHIL 165"
+			},
+			"cc": {
+				"or": ["PHIL 101", "PHIL 101H"]
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "AFRS 271"
+			},
+			"cc": {
+				"modifiers": ["Course cannot be dual counted"],
+				"course": "BLST 101"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "AFRS 272"
+			},
+			"cc": {
+				"modifiers": ["Course cannot be dual counted"],
+				"course": "BLST 101"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "POLS 197"
+			},
+			"cc": {
+				"modifiers": [],
+				"name": "No Course Articulated"
+			}
+		}]
+	}, {
+		"section_name": "Track C: Sustainability",
+		"info": null,
+		"articulations": [{
+			"univ": {
+				"modifiers": [],
+				"course": "RTM 251"
+			},
+			"cc": {
+				"modifiers": [],
+				"name": "No Course Articulated"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "URBS 150"
+			},
+			"cc": {
+				"modifiers": [],
+				"name": "No Course Articulated"
+			}
+		}]
+	}, {
+		"section_name": "Track D: Russian Studies",
+		"info": null,
+		"articulations": [{
+			"univ": {
+				"modifiers": [],
+				"course": "RUSS 101"
+			},
+			"cc": {
+				"modifiers": [],
+				"name": "No Course Articulated"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "RUSS 102"
+			},
+			"cc": {
+				"modifiers": [],
+				"name": "No Course Articulated"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "RUSS 201"
+			},
+			"cc": {
+				"modifiers": [],
+				"name": "No Course Articulated"
+			}
+		}, {
+			"or": [{
+				"univ": {
+					"modifiers": [],
+					"course": "RUSS 200"
+				},
+				"cc": {
+					"modifiers": [],
+					"name": "No Course Articulated"
+				}
+			}, {
+				"univ": {
+					"modifiers": [],
+					"course": "RUSS 202"
+				},
+				"cc": {
+					"modifiers": [],
+					"name": "No Course Articulated"
+				}
+			}]
+		}]
+	}, {
+		"section_name": "Track E: China Studies",
+		"info": null,
+		"articulations": [{
+			"univ": {
+				"modifiers": [],
+				"course": "CHIN 101"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "CHIN 101"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "CHIN 102"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "CHIN 102"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "CHIN 201"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "CHIN 103"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "CHIN 202"
+			},
+			"cc": {
+				"modifiers": [],
+				"name": "No Course Articulated"
+			}
+		}]
+	}]
+}

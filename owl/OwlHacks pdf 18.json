@@ -1,0 +1,146 @@
+{
+	"header": {
+		"source": "pdf18",
+		"university": "Humboldt State University",
+		"college": "San Diego City College",
+		"route": "Rangeland Resource Science B.S. - Wildland Soil Science Concentration"
+	},
+	"sections": [{
+		"section_name": "LOWER DIVISION",
+		"info": null,
+		"articulations": [{
+			"univ": {
+				"modifiers": [],
+				"course": "BIOL 105"
+			},
+			"cc": {
+				"name": "BIOL 210A",
+				"modifiers": []
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "BOT 105"
+			},
+			"cc": {
+				"modifiers": [],
+				"name": "No Course Articulated"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "CHEM 107"
+			},
+			"cc": {
+				"or": ["CHEM 100", "CHEM 100L"]
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "ESM 105"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "No Course Articulated"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "GSP 101"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "No Course Articulated"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "GSP 101L"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "No Course Articulated"
+			}
+		}, {
+			"or": [{
+				"univ": {
+					"modifiers": [],
+					"course": "GSP 216"
+				},
+				"cc": {
+					"modifiers": [],
+					"name": "No Course Articulated"
+				}
+			}, {
+				"univ": {
+					"modifiers": [],
+					"course": "GSP 270"
+				},
+				"cc": {
+					"modifiers": [],
+					"name": "No Course Articulated"
+				}
+			}]
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "PHYX 106"
+			},
+			"cc": {
+				"or": ["PHYS 125", {
+					"and": ["PHYS 180A", "PHYS 181A"]
+				}]
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "SCI 100"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "No Course Articulated"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "SOIL 260"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "No Course Articulated"
+			}
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "STAT 109"
+			},
+			"cc": {
+				"modifiers": [],
+				"course": "No Course Articulated"
+			}
+		}]
+	}, {
+		"section_name": "EMPHASES: CHOOSE ONE OF THE FOLLOWING EMPHASES",
+		"info": "Select 1 EMPHASES(s) from the following",
+		"articulations": [{
+			"univ": {
+				"modifiers": [],
+				"course": "FOR 130"
+			},
+			"cc": {
+				"modifiers": [],
+				"name": "No Course Articulated"
+			},
+			"emphasis": "BOTANY EMPHASIS"
+		}, {
+			"univ": {
+				"modifiers": [],
+				"course": "GEOL 109"
+			},
+			"cc": {
+				"and": ["GEOL 100", "GEOL 101"]
+			},
+			"emphasis": "EARTH SCIENCES EMPHASIS"
+		}]
+	}]
+}
