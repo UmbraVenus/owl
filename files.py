@@ -1,7 +1,7 @@
 import streamlit as st
 
 def app():
-    st.title("Welcome to File(s) Parser")
+    st.title("AWCA x OwlHacks")
 
     # the app will only execute if the user chooses submit
     with st.form("my_form"):
