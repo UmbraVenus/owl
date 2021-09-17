@@ -1,2 +1,7 @@
 streamlit
 camelot-py[cv]
+datascience
+numpy
+pandas
+python-Levenshtein
+fuzzywuzzy
