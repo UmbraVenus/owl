@@ -72,7 +72,7 @@ def app():
                 </a>'
                 st.markdown(href, unsafe_allow_html=True)
     except FileNotFoundError as e:
-        st.header("wait for the ballonns to appear to download!")
+        st.header("wait for the balloons to appear to download!")
     
         
 
