@@ -10,16 +10,16 @@ def save_uploadedfile(uploadedfile):
         f.write(uploadedfile.getbuffer())
 
 def app():
-    my_json = Path("parsed_json.zip")
-    my_csv = Path("parsed_csv.zip")
+    #my_json = Path("parsed_json.zip")
+    #my_csv = Path("parsed_csv.zip")
 
     st.title("AWCA x OwlHacks")
-
+    """
     if my_json.exists():
         os.remove("parsed_json.zip")
     if my_csv.exists():
         os.remove("parsed_csv.zip")
-
+    """
     # the app will only execute if the user chooses submit
     with st.form("my_form"):
         # uploaded files
