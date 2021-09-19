@@ -11,6 +11,8 @@ import os
 import numpy as np
 
 def clean(string):
+    if type(string) == np.float64:
+        return string
     while string.startswith(" "):
         astring = string[1:]
         string = astring
@@ -51,7 +53,7 @@ def get_course_info(string):
 
 def is_course(string):
     course_regex = re.compile(r'(← )*([A-Z])+ (\d)+(H)* - [a-zA-Z]+( (\d.\d\d))*')
-    if course_regex.search(string) or string == "← No Course Articulated" or string == "Course cannot be dual counted" or "← No Course Articulated" in string or (r'(← )*([A-Z])+ (\d)+(H)* - [a-zA-Z]+( (\d.\d\d))*') in string:
+    if course_regex.search(string) or string == "← No Course Articulated" or string == "Course cannot be dual counted" or "No Course Articulated" in string or (r'(← )*([A-Z])+ (\d)+(H)* - [a-zA-Z]+( (\d.\d\d))*') in string:
         #print(True)
         return True
     else:
@@ -85,9 +87,11 @@ def read_table(filename):
                 os.remove(fname)
             except OSError as e:
                 print("Error: %s : %s" % (fname, e.strerror))
+    #print(len(rawlist))
+    #print(len(rawlist2))
+    rawlist = [clean(x) for x in rawlist]
+    rawlist2 = [clean(x) for x in rawlist2]
     
-    rawlist = [clean(x) for x in rawlist if not type(x)==np.float64]
-    rawlist2 = [clean(x) for x in rawlist2 if not type(x) == np.float64]
     df = pd.DataFrame(
         {
             "univ": rawlist,
@@ -95,6 +99,7 @@ def read_table(filename):
         },
     )
     #df.to_csv("3.csv")
+    df = df.fillna("nan")
     return df
 
 def contains_courses(df):
@@ -133,11 +138,16 @@ def create_course(info):
 # inputs a section df, outputs a list of courses
 def get_courses_list(df2):
     #big or
+    #print(df2)
     pair_list = []
     length = len(df2["univ"])+1
-    s2 = pd.Series([["nan", "nan",]], index=[length])
+    s2 = pd.Series([["nanhuh", "nankjhg",]], index=[length])
     df2 = df2.append(s2, ignore_index=True)
-    for index, row in df2[:-1].iterrows():
+    s3 = pd.Series([["nanhhgg", "nangjj",]], index=[length])
+    df2 = df2.append(s3, ignore_index=True)
+    df2 = df2.fillna("nan")
+    for index, row in df2.iterrows():
+        # no relationship
         if is_course(row["univ"]) and not has_r(df2.iloc[index + 1]["univ"]) and is_course(row["cc"]) and not has_r(df2.iloc[index + 1]["cc"]):
             new_pair = pair()
             cc_courses = []
@@ -151,44 +161,7 @@ def get_courses_list(df2):
             new_pair.univ = univ_courses
             new_pair.cc = cc_courses
             pair_list.append(new_pair.__dict__)
-        elif is_course(row["univ"]) and has_r(df2.iloc[index + 1]["univ"]) and is_course(row["cc"]) and not has_r(df2.iloc[index + 1]["cc"]):
-            new_pair = pair()
-            cc_courses = []
-            univ_courses = []
-            univ_r = "null"
-            cc_r = "null"
-            new_cc_course = create_course(row["cc"])
-            new_univ_course = create_course(row["univ"])
-            cc_courses.append(new_cc_course.__dict__)
-            univ_courses.append(new_univ_course.__dict__)
-            relationship = "null"
-            for i, r in df2[index:].iterrows():
-                if has_r(r["univ"]):
-                    relationship = r["cc"].strip("-").strip(" ")
-                elif is_course(r["univ"]) and is_course(r["cc"]):
-                    new_pair.next_relationship = df2.iloc[i-1]["univ"].strip("-").strip(" ")
-                    new_pair.univ = univ_courses
-                    new_pair.cc = cc_courses
-                    pair_list.append(new_pair.__dict__)
-                    newer_pair = pair()
-                    cc_courses = []
-                    univ_courses = []
-                    newer_cc_course = create_course(r["cc"])
-                    newer_univ_course = create_course(r["univ"])
-                    cc_courses.append(newer_cc_course.__dict__)
-                    univ_courses.append(newer_univ_course.__dict__)
-                    newer_pair.univ = univ_courses
-                    newer_pair.cc = cc_courses
-                    pair_list.append(newer_pair.__dict__)
-                elif is_course(r["univ"]) and not is_course(r["cc"]):
-                    new_pair.univ_relationship = df2.iloc[i-1]["univ"].strip("-").strip(" ")
-                    newer_univ_course = create_course(r["univ"])
-                    univ_courses.append(newer_univ_course.__dict__)
-                else:
-                    break
-            new_pair.univ = univ_courses
-            new_pair.cc = cc_courses
-            pair_list.append(new_pair.__dict__)
+        # univ relationship and big or
         elif is_course(row["univ"]) and not has_r(df2.iloc[index + 1]["univ"]) and is_course(row["cc"]) and has_r(df2.iloc[index + 1]["cc"]):
             new_pair = pair()
             cc_courses = []
@@ -200,20 +173,65 @@ def get_courses_list(df2):
             cc_courses.append(new_cc_course.__dict__)
             univ_courses.append(new_univ_course.__dict__)
             relationship = "null"
-            for i, r in df2[index:].iterrows():
-                print(r)
+            for i, r in df2[index+1:].iterrows():
+                #print(r)
                 if has_r(r["cc"]):
                     relationship = r["cc"].strip("-").strip(" ")
-                elif is_course(r["cc"]) and r["univ"] == "nan":
-                    relationship = df2.iloc[i-1]["cc"].strip("-").strip(" ")
+                elif is_course(r["cc"]) and not is_course(r["univ"]):
+                    #relationship = df2.iloc[i-1]["cc"].strip("-").strip(" ")
                     newer_cc_course = create_course(r["cc"])
                     cc_courses.append(newer_cc_course.__dict__)
+                    new_pair.cc_relationship = relationship
+                    relationship = "null"
                 else:
                     break
             new_pair.univ = univ_courses
             new_pair.cc = cc_courses
-            new_pair.cc_relationship = relationship
             pair_list.append(new_pair.__dict__)
+        elif is_course(row["univ"]) and (has_r(df2.iloc[index + 1]["univ"]) or has_r(df2.iloc[index+1]["cc"])):
+            print("=======")
+            new_pair = pair()
+            cc_courses = []
+            univ_courses = []
+            univ_r = "null"
+            cc_r = "null"
+            new_cc_course = create_course(row["cc"])
+            new_univ_course = create_course(row["univ"])
+            cc_courses.append(new_cc_course.__dict__)
+            univ_courses.append(new_univ_course.__dict__)
+            relationship = min(df2.iloc[index+1]["cc"].strip("-").strip(" "), df2.iloc[index+1]["univ"].strip("-").strip(" "))
+            for i, r in df2[index + 1 :].iterrows():
+                #print(r)
+                if has_r(r["univ"]):
+                    relationship = r["cc"].strip("-").strip(" ")
+                elif is_course(r["univ"]) and r["cc"]=="nan":
+                    new_pair.univ_relationship = relationship
+                    newer_univ_course = create_course(r["univ"])
+                    univ_courses.append(newer_univ_course.__dict__)
+                    break
+                else:
+                    #print("=======")
+                    if is_course(r["cc"]) or is_course(r["univ"]):
+                        new_pair.next_relationship = relationship
+                        new_pair.univ = univ_courses
+                        new_pair.cc = cc_courses
+                        pair_list.append(new_pair.__dict__)
+                        relationship = "null"
+                        newer_pair = pair()
+                        cc_courses = []
+                        univ_courses = []
+                        newer_cc_course = create_course(r["cc"])
+                        newer_univ_course = create_course(r["univ"])
+                        cc_courses.append(newer_cc_course.__dict__)
+                        univ_courses.append(newer_univ_course.__dict__)
+                        newer_pair.univ = univ_courses
+                        newer_pair.cc = cc_courses
+                        pair_list.append(newer_pair.__dict__)
+                        break
+            new_pair.univ = univ_courses
+            new_pair.cc = cc_courses
+            pair_list.append(new_pair.__dict__)
+        # cc relationship
     return pair_list
 
 def get_object(df, filename):
@@ -252,6 +270,6 @@ def get_json(final_object, output_file):
         json.dump(final_object, fp)
 
 
-df = read_table("owl/Student_TestSet/8.pdf")
-final_object = get_object(df, "owl/Student_TestSet/8.pdf")
+df = read_table("owl/Student_TestSet/5.pdf")
+final_object = get_object(df, "owl/Student_TestSet/5.pdf")
 get_json(final_object, "data_file.json")

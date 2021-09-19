@@ -1,48 +1,47 @@
 {
 	"header": {
-		"source": "owl/Student_TestSet/8.pdf",
-		"university": "California State University, Fullerton",
+		"source": "owl/Student_TestSet/5.pdf",
+		"university": "California State University, San Marcos",
 		"college": "Santa Barbara City College",
-		"route": "American Studies, B.A."
+		"route": "Nursing, All Options"
 	},
 	"sections": [
 		{
-			"section_name": "CORE REQUIREMENTS",
-			"info": "Select 12 Semester Unit(s) from the followingCORE REQUIREMENTS",
-			"articulations": [
-				{
-					"univ": [
-						{
-							"modifers": [],
-							"course": "AMST 201"
-						}
-					],
-					"cc": [
-						{
-							"modifers": [],
-							"course": "No Course Articulated"
-						}
-					]
-				}
-			]
-		},
-		{
-			"section_name": "REQUIRED FOR GRADUATION",
+			"section_name": "SUPPORT COURSES",
 			"info": "null",
 			"articulations": [
 				{
 					"univ": [
 						{
 							"modifers": [],
-							"course": "POSC 100"
+							"course": "ANTH 200"
 						}
 					],
 					"cc": [
 						{
 							"modifers": [],
-							"course": "REQUIRED FOR GRADUATION\u2190 POLS 101"
+							"course": "SUPPORT COURSES\u2190 ANTH 103"
 						}
 					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "PSYC 100"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "PSY 100"
+						},
+						{
+							"modifers": [],
+							"course": "PSY 100H"
+						}
+					],
+					"cc_relationship": "And"
 				}
 			]
 		}
