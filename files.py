@@ -3,13 +3,22 @@ from newer_script import *
 from zipfile import ZipFile
 import os
 import base64
+from pathlib import Path
 
 def save_uploadedfile(uploadedfile):
     with open(os.path.join(uploadedfile.name),"wb") as f:
         f.write(uploadedfile.getbuffer())
 
 def app():
+    my_json = Path("parsed_json.zip")
+    my_csv = Path("parsed_csv.zip")
+
     st.title("AWCA x OwlHacks")
+
+    if my_json.exists():
+        os.remove("parsed_json.zip")
+    if my_csv.exists():
+        os.remove("parsed_csv.zip")
 
     # the app will only execute if the user chooses submit
     with st.form("my_form"):
@@ -22,7 +31,7 @@ def app():
         global zip2
 
         # Every form must have a submit button.
-        submitted = st.form_submit_button("Parse!")
+        submitted = st.form_submit_button("1.Parse!")
         # this is just to display the file names, will add function later
         if submitted:
 
@@ -51,7 +60,7 @@ def app():
             bytes = f.read()
             b64 = base64.b64encode(bytes).decode()
             href = f'<a href="data:file/zip;base64,{b64}" download=\'parsed_json.zip\'>\
-            Click to download JSON\
+            2.Click to download JSON\
             </a>'
             st.markdown(href, unsafe_allow_html=True)
     with col2:
@@ -59,7 +68,7 @@ def app():
             bytes = f.read()
             b64 = base64.b64encode(bytes).decode()
             href = f'<a href="data:file/zip;base64,{b64}" download=\'parsed_csv.zip\'>\
-            Click to download CSV\
+            3.Click to download CSV\
             </a>'
             st.markdown(href, unsafe_allow_html=True)
     

@@ -104,7 +104,7 @@ def read_table(filename):
 
 def contains_courses(df):
     for index, row in df.iterrows():
-        if is_course(row["univ"]) and is_course(row["cc"]):
+        if is_course(row["univ"]) or is_course(row["cc"]):
             return True
     return False
 
@@ -113,21 +113,28 @@ def contains_courses(df):
 def get_sections(df1):
     header_index = []
     for index, row in df1[:-1].iterrows():
-        if row["cc"].startswith("TRACK") or (not (row["cc"].startswith(" **")) and row["cc"].isupper() and (df1.iloc[index + 1]["cc"].startswith("Select 1") or df1.iloc[index + 1]["cc"].startswith(" **REFER TO") or is_course(df1.iloc[index + 1]["univ"]) or df1.iloc[index + 1]["cc"].startswith(" Only lower division courses"))):
+        """
+        if row["cc"].startswith("TRACK") or "Only lower" in row["cc"]  or (((not (row["cc"].startswith(" **"))) and row["cc"].isupper()) and (df1.iloc[index + 1]["cc"].startswith("Select 1") or df1.iloc[index + 1]["cc"].startswith(" **REFER TO") or is_course(df1.iloc[index + 1]["univ"]) or df1.iloc[index + 1]["cc"].startswith(" Only lower"))):
+            print("=======")
             if not row["cc"].startswith(" **"):
                 header_index.append(index)
+        elif "Only lower" in row["cc"]:
+            header_index.append(index)
+        """
+        if row["cc"].isupper():
+            header_index.append(index)
     newlist = []
     if len(header_index) > 1:
         newlist = [df1[header_index[i] : header_index[i + 1]] for i in range(len(header_index) - 1)] + [df1[header_index[-1] :]]
-    newerlist = newlist.copy()
+    newerlist = []
     
     for i, x in enumerate(newlist):
         if contains_courses(x):
-            continue
+            newerlist.append(x)
         else:
-            newerlist = newerlist[0:i] + newerlist[i + 1 :]
-    
-    #print(newerlist)
+            continue
+    print(header_index)
+    print(newerlist)
     return newerlist
 
 def create_course(info):
@@ -270,6 +277,6 @@ def get_json(final_object, output_file):
         json.dump(final_object, fp)
 
 
-#df = read_table("owl/Student_TestSet/5.pdf")
-#final_object = get_object(df, "owl/Student_TestSet/5.pdf")
-#get_json(final_object, "data_file.json")
+df = read_table("owl/Student_TestSet/19.pdf")
+final_object = get_object(df, "owl/Student_TestSet/19.pdf")
+get_json(final_object, "data_file.json")
