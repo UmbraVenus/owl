@@ -270,6 +270,6 @@ def get_json(final_object, output_file):
         json.dump(final_object, fp)
 
 
-df = read_table("owl/Student_TestSet/5.pdf")
-final_object = get_object(df, "owl/Student_TestSet/5.pdf")
-get_json(final_object, "data_file.json")
+#df = read_table("owl/Student_TestSet/5.pdf")
+#final_object = get_object(df, "owl/Student_TestSet/5.pdf")
+#get_json(final_object, "data_file.json")
