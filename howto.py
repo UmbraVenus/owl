@@ -5,7 +5,7 @@ img = Image.open("assets/img/edvisorly.png")
 def app():
     st.title("Video Tutorial")
     #st.info("Video will be here once parser questions are answered, Friday at 4 PM!")
-    video_file = open('tutorial.mp4', 'rb')
+    video_file = open('/tmp/tutorial.mp4', 'rb')
     video_bytes = video_file.read()
 
     st.video(video_bytes)
