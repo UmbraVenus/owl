@@ -1,0 +1,36 @@
+=============
+0
+---
+['LOWER DIVISION MAJOR PREPARATION COURSES', '← No Course Articulated', 'HUM\u200b 101 - \u200bForms and Ideas in Humanities (3.00)\nLOWER DIVISION MAJOR PREPARATION COURSES', '--- And ---']
+=============
+1
+---
+['PHILOSOPHY AND CULTURE', 'Select 1 Course(s) from the following', '← CHST\u200b 131 - \u200bHistory of Chicano Art (3.00)', 'CH S\u200b 111 - \u200bThe Chicana/o and the Arts (3.00)', '← No Course Articulated', 'HUM\u200b 105 - \u200bCultural Eras in Humanities I (3.00)', '← No Course Articulated', 'LING\u200b 200 - \u200bHow Language Matters (3.00)', '← PHIL\u200b 101 - \u200bIntroduction to Ethics (3.00)', "PHIL\u200b 165 - \u200bToday's Moral Issues (3.00)", '--- Or ---', 'PHIL\u200b 101H - \u200bIntroduction to Ethics, Honors (4.00)', '← PHIL\u200b 201 - \u200bHistory of Philosophy: Modern (3.00)', 'PHIL\u200b 202 - \u200bModern Philosophy (3.00)', '← PHIL\u200b 102 - \u200bComparative World Religions (3.00)', '--- And ---']
+=============
+2
+---
+['SOCIAL SCIENCES', 'Select 1 Course(s) from the following', '← No Course Articulated', 'ANTH\u200b 150 - \u200bThe Human Adventure: Introduction to Anthropology', '(3.00)', '← No Course Articulated', 'ECON\u200b 175 - \u200bIntroduction to U.S. Economic History (3.00)', '← HIST\u200b 108 - \u200bWorld Civilization, 1550 to Present (3.00)', 'HIST\u200b 111 - \u200bWorld History Since 1500 (3.00)', '← POLS\u200b 121 - \u200bInternational Politics (3.00)', 'POLS\u200b 225 - \u200bElements of International Relations (3.00)', '← PSY\u200b 100 - \u200bGeneral Psychology (3.00)', 'PSY\u200b 150 - \u200bIntroduction to Psychology (3.00)', '--- Or ---', 'PSY\u200b 100H - \u200bGeneral Psychology, Honors (4.00)', '← SOC\u200b 101 - \u200bIntroduction to Sociology (3.00)', 'SOC\u200b 150 - \u200bIntroductory Sociology (3.00)', '--- Or ---', 'SOC\u200b 101H - \u200bIntroduction to Sociology, Honors (4.00)', '--- And ---']
+=============
+3
+---
+['LANGUAGES OTHER THAN ENGLISH', 'Select 1 Course(s) from the following', 'LANGUAGES OTHER THAN ENGLISH', '← No Course Articulated', 'ARMN\u200b 101 - \u200bElementary Armenian I (3.00)', '← CHIN\u200b 101 - \u200bBeginning Chinese I (5.00)', 'CHIN\u200b 101 - \u200bElementary Mandarin Chinese I (4.00)', '← No Course Articulated', 'CLAS\u200b 101G - \u200bElementary Greek I (3.00)', '← LATN\u200b 101 - \u200bBeginning Latin I (5.00)', 'CLAS\u200b 101L - \u200bElementary Latin I (3.00)', '← ASL\u200b 101 - \u200bBeginning American Sign Language I (5.00)', 'DEAF\u200b 160 - \u200bAmerican Sign Language I (4.00)', '← FR\u200b 101 - \u200bBeginning French I (5.00)', 'FREN\u200b 101 - \u200bElementary French I (4.00)', '← HEBR\u200b 101 - \u200bBeginning Modern Hebrew I (5.00)', 'HEBR\u200b 101 - \u200bElementary Hebrew I (4.00)', '← ITAL\u200b 101 - \u200bBeginning Italian I (5.00)', 'ITAL\u200b 101 - \u200bElementary Italian I (4.00)', '← JAPN\u200b 101 - \u200bBeginning Japanese I (5.00)', 'JAPN\u200b 101 - \u200bElementary Japanese I (4.00)', '← KOR\u200b 101 - \u200bBeginning Korean I (5.00)', 'KOR\u200b 101 - \u200bElementary Korean I (4.00)', '← No Course Articulated', 'RUSS\u200b 101 - \u200bElementary Russian I (4.00)', '← SPAN\u200b 101 - \u200bBeginning Spanish I (5.00)', 'SPAN\u200b 101 - \u200bElementary Spanish I (4.00)', 'TRACK A: THE HUMANITIES', '\u200b **REFER TO TOP OF AGREEMENT**']
+=============
+4
+---
+['TRACK A: THE HUMANITIES', '← No Course Articulated', 'HUM\u200b 105 - \u200bCultural Eras in Humanities I (3.00)', '← No Course Articulated', 'HUM\u200b 106 - \u200bCultural Eras in Humanities II (3.00)', 'Select 1 Course(s) from the following', '← ART\u200b 103 - \u200bHistory of Art, Prehistoric to Gothic (3.00)', 'ART\u200b 110 - \u200bWorld Arts: The Western Tradition (3.00)', '← ART\u200b 215 - \u200bSurvey of Non-Western Art (3.00)', 'ART\u200b 112 - \u200bWorld Arts: Africa, Oceania, and the Americas (3.00)', '← ART\u200b 108 - \u200bHistory of Asian Art (3.00)', 'ART\u200b 114 - \u200bWorld Arts: Asia (3.00)', '← PE\u200b 252A - \u200bFundamentals of Choreography (2.00)', 'KIN\u200b 236 - \u200bIntroduction to Choreography (2.00)', '--- And ---', 'KIN\u200b 236L - \u200bIntroduction to Choreography Laboratory (1.00)', '← MUS\u200b 110 - \u200bMusic Appreciation (3.00)', 'MUS\u200b 105 - \u200bUnderstanding Music (3.00)', '← TA\u200b 103 - \u200bTheatre Appreciation (3.00)', 'TH\u200b 110 - \u200bIntroduction to Theatre: Text/Drama/Performance (3.00)', '\u200b **REFER TO TOP OF AGREEMENT**']
+=============
+5
+---
+['TRACK B: HUMAN RIGHTS', '← SOC\u200b 101 - \u200bIntroduction to Sociology (3.00)', 'SOC\u200b 150 - \u200bIntroductory Sociology (3.00)', '--- Or ---', 'SOC\u200b 101H - \u200bIntroduction to Sociology, Honors (4.00)', '← PHIL\u200b 101 - \u200bIntroduction to Ethics (3.00)', "PHIL\u200b 165 - \u200bToday's Moral Issues (3.00)", '--- Or ---', 'PHIL\u200b 101H - \u200bIntroduction to Ethics, Honors (4.00)', '← BLST\u200b 101 - \u200bThe African-American in U.S. History to World War II', 'AFRS\u200b 271 - \u200bAfrican-American History to 1865 (3.00)', '(3.00)', '\u200bCourse cannot be dual counted', '← BLST\u200b 101 - \u200bThe African-American in U.S. History to World War II', 'AFRS\u200b 272 - \u200bAfrican-American History since 1865 (3.00)', '(3.00)', '\u200bCourse cannot be dual counted', '← No Course Articulated', 'POLS\u200b 197 - \u200bRacial and Ethnic Politics (3.00)', 'TRACK C: SUSTAINABILITY', '\u200b **REFER TO TOP OF AGREEMENT**']
+=============
+6
+---
+['TRACK C: SUSTAINABILITY', '← No Course Articulated', 'RTM\u200b 251 - \u200bRecreation and the Natural Environment (3.00)', '← No Course Articulated', 'URBS\u200b 150 - \u200bThe Urban Scene (3.00)', 'TRACK D: RUSSIAN STUDIES', '\u200b **REFER TO TOP OF AGREEMENT**']
+=============
+7
+---
+['TRACK D: RUSSIAN STUDIES', '← No Course Articulated', 'RUSS\u200b 101 - \u200bElementary Russian I (4.00)', '← No Course Articulated', 'RUSS\u200b 102 - \u200bElementary Russian II (4.00)', '← No Course Articulated', 'RUSS\u200b 201 - \u200bIntermediate Russian (3.00)', '← No Course Articulated', 'RUSS\u200b 200 - \u200bBeginning Russian Conversation (3.00)', '--- Or ---', '← No Course Articulated', 'RUSS\u200b 202 - \u200bIntermediate Russian Reading (3.00)', 'TRACK E: CHINA STUDIES', '\u200b **REFER TO TOP OF AGREEMENT**']
+=============
+8
+---
+['TRACK E: CHINA STUDIES', '← CHIN\u200b 101 - \u200bBeginning Chinese I (5.00)', 'CHIN\u200b 101 - \u200bElementary Mandarin Chinese I (4.00)', '← CHIN\u200b 102 - \u200bBeginning Chinese II (5.00)', 'CHIN\u200b 102 - \u200bElementary Mandarin Chinese II (4.00)', '← CHIN\u200b 103 - \u200bIntermediate Chinese (5.00)', 'CHIN\u200b 201 - \u200bIntermediate Mandarin Chinese I (3.00)', '← No Course Articulated', 'CHIN\u200b 202 - \u200bIntermediate Mandarin Chinese II (3.00)']

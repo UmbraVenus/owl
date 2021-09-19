@@ -91,10 +91,10 @@ def get_object(rawlist, filename):
             next_relationship = x[-1].strip("-").strip(" ")
         else:
             next_relationship = "null"
-        new_section.header = section_name
+        new_section.section_name = section_name
         new_section.info = info
         new_section.next_relationship = next_relationship
-        new_section.pairs = []
+        new_section.articulations = []
         page_list.append(new_section)
 
         s_index = []
@@ -103,30 +103,9 @@ def get_object(rawlist, filename):
                 s_index.append(index)
         one_pair = [x[s_index[i] : s_index[i + 1]] for i in range(len(s_index) - 1)] + [x[s_index[-1] :]]
         sections_list.append(one_pair)
-
-        
-        """
-        for index, y in enumerate(x[:-2]):
-            new_pair = pair()
-            cc_courses = []
-            univ_courses = []
-            if y.startswith("←") and y != "← No Course Articulated":
-                new_cc_course = course()
-                course_info = get_course_info(y)
-                new_cc_course.course_number, new_cc_course.name, new_cc_course.units = course_info[0], course_info[1], course_info[2]
-                if x[i + 2] == "Course cannot be dual counted":
-                    new_cc_course.modifers = ["Course cannot be dual counted"]
-                cc_courses.append(new_cc_course)
-
-                new_u_course = course()
-                univ_course_info = get_course_info(x[i + 1])
-                new_u_course.course_number, new_u_course.name, new_u_course.units = univ_course_info[0], univ_course_info[1], univ_course_info[2]
-                univ_courses.append(new_u_course)
-                if has_r(x[i + 2]):
-                    score_u = fuzz.ratio()
-        """       
+   
     for index, x in enumerate(sections_list):
-        page_list[index].pairs = []
+        page_list[index].articulations = []
         for idx, z in enumerate(x):
             new_pair = pair()
             cc_courses = []
@@ -137,29 +116,29 @@ def get_object(rawlist, filename):
                 if y.startswith("←") and y != "← No Course Articulated":
                     new_cc_course = course()
                     course_info = get_course_info(y)
-                    new_cc_course.course_number, new_cc_course.name, new_cc_course.units = course_info[0], course_info[1], course_info[2]
-                    if len(z) > 2:
-                        if z[i + 2] == "Course cannot be dual counted":
+                    new_cc_course.course, new_cc_course.name, new_cc_course.units = course_info[0], course_info[1], course_info[2]
+                    if len(z) > 3:
+                        if z[i + 3] == "Course cannot be dual counted":
                             new_cc_course.modifers = ["Course cannot be dual counted"]
                     cc_courses.append(new_cc_course.__dict__)
         
                     new_u_course = course()
                     univ_course_info = get_course_info(z[i+1])
-                    new_u_course.course_number, new_u_course.name, new_u_course.units = univ_course_info[0], univ_course_info[1], univ_course_info[2]
+                    new_u_course.course, new_u_course.name, new_u_course.units = univ_course_info[0], univ_course_info[1], univ_course_info[2]
                     univ_courses.append(new_u_course.__dict__)
                     
-                elif y == "← No Course Articulated":
+                elif y.startswith("← No Course Articulated"):
                     new_cc_course = course()
                     course_info = get_course_info(y)
-                    new_cc_course.course_number, new_cc_course.name, new_cc_course.units = course_info[0], course_info[1], course_info[2]
-                    if len(z) > 2:
-                        if z[i + 2] == "Course cannot be dual counted":
+                    new_cc_course.course, new_cc_course.name, new_cc_course.units = course_info[0], course_info[1], course_info[2]
+                    if len(z) > 3:
+                        if z[i + 3] == "Course cannot be dual counted":
                             new_cc_course.modifers = ["Course cannot be dual counted"]
                     cc_courses.append(new_cc_course.__dict__)
 
                     new_u_course = course()
                     univ_course_info = get_course_info(z[i+1])
-                    new_u_course.course_number, new_u_course.name, new_u_course.units = univ_course_info[0], univ_course_info[1], univ_course_info[2]
+                    new_u_course.course, new_u_course.name, new_u_course.units = univ_course_info[0], univ_course_info[1], univ_course_info[2]
                     univ_courses.append(new_u_course.__dict__)
                 
                 if has_r(y):
@@ -169,32 +148,29 @@ def get_object(rawlist, filename):
                         if score_c > score_u:
                             new_pair.cc_r = y.strip("-")
                             newer_cc_course = course()
-                            newer_cc_info = get_course_info(z[i - 2])
-                            newer_cc_course.course_number, newer_cc_course.name, newer_cc_course.units = newer_cc_info[0], newer_cc_info[1], newer_cc_info[2]
+                            newer_cc_info = get_course_info(z[i + 1])
+                            newer_cc_course.course, newer_cc_course.name, newer_cc_course.units = newer_cc_info[0], newer_cc_info[1], newer_cc_info[2]
                             cc_courses.append(newer_cc_course.__dict__)
                         elif score_u > score_c:
                             new_pair.univ_r = y.strip("-")
                             newer_u_course = course()
-                            newer_u_info = get_course_info(z[i - 1])
-                            newer_u_course.course_number, newer_u_course.name, newer_u_course.units = newer_u_info[0], newer_u_info[1], newer_u_info[2]
+                            newer_u_info = get_course_info(z[i + 1])
+                            newer_u_course.course, newer_u_course.name, newer_u_course.units = newer_u_info[0], newer_u_info[1], newer_u_info[2]
                             univ_courses.append(newer_u_course.__dict__)
                 new_pair.univ_course = univ_courses
                 new_pair.cc_course = cc_courses
-            page_list[index].pairs.append(new_pair.__dict__)
+            page_list[index].articulations.append(new_pair.__dict__)
     new_page_list = [x.__dict__ for x in page_list]
     final = page()
-    final.title = header
-    final.all_sections = new_page_list
+    final.header = header
+    final.sections = new_page_list
     return final.__dict__
     #print(sections_list)
 
 def get_json(final_object, output_file):
     with open(output_file, 'w') as fp:
         json.dump(final_object, fp)
-                
-    
 
-        
 
 rawlist = read_table("owl/Student_TestSet/3.pdf")
 final_object = get_object(rawlist, "owl/Student_TestSet/3.pdf")

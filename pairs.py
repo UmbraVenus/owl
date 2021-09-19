@@ -7,20 +7,36 @@
 import json
 
 """
+"or": [ "PHIL 101", "PHIL 101H" ]
+"""
+class or_r:
+    def __init__(self, or_list=[]):
+        self.or_r = or_list
+    
+    def addor(self, objects):
+        self.or_r.append(objects)
+        
+class and_r:
+    def __init__(self, and_list=[]):
+        self.and_r = and_list
+    def addand(self, objects):
+        self.and_r.append(objects)
+
+
+"""
 {
-    "modifiers":[],
-    "course": "HUM 101",
-    "name": "Introduction to Humanities",
-    "units": 3
-}
+	"modifiers": [],
+	"course": "HUM 105"
+},
 """
 class course:
-    def __init__(self, modifers=[], course_n="", name="", units=0):
+    def __init__(self, modifers=[], course="", name=""):
         
         self.modifers = modifers
-        self.course_number = course_n
-        self.name = name
-        self.units = units
+        self.course = course
+        #self.name = name
+        #self.name = name
+        #self.units = units
         """
         self.course = [{
             "modifers": modifers,
@@ -32,27 +48,9 @@ class course:
 
         
 
-"""
-{
-    "relationship": "or",
-    "courses": [
-        {
-            "modifiers":[],
-            "course": "HUM 101",
-            "name": "Introduction to Humanities",
-            "units": 3
-        },
-        {
-            "modifers":["Cannot be dual counted"],
-            "course" : "BUS 101",
-            "name" : "Introduction to Business",
-            "units":4
-        }
-    ],
-}
-"""
+
 class courses:
-    def __init__(self, relationship="and", courses=[],):
+    def __init__(self, relationship="null", courses=[],):
         self.relationship = relationship
         self.courses = courses
         """
@@ -67,68 +65,22 @@ class courses:
 
 """
 {
-    "univ":{
-        "relationship": "and",
-        "courses_row": [
-            {
-                "relationship": "or",
-                "courses": [
-                {
-                    "modifiers":[],
-                    "course": "HUM 101",
-                    "name": "Introduction to Humanities",
-                    "units": 3
-                },
-                {
-                    "modifers":["Cannot be dual counted"],
-                    "course" : "BUS 101",
-                    "name" : "Introduction to Business",
-                    "units":4
-                }
-                ],
-            },
-            {
-                relationship":"and",
-                "courses":[
-                    {
-                        "modifiers":[],
-                        "course": "HUM 101",
-                        "name": "Introduction to Humanities",
-                        "units": 3
-                    }
-                ],
-            }],
-    },
-    "cc":{
-        "relationship":"and",
-        "courses_row": [
-            {
-                "relationship": "or",
-                "courses": [
-                {
-                    "modifiers":[],
-                    "course": "HUM 101",
-                    "name": "Introduction to Humanities",
-                    "units": 3
-                },
-                {
-                    "modifers":["Cannot be dual counted"],
-                    "course" : "BUS 101",
-                    "name" : "Introduction to Business",
-                    "units":4
-                }
-                ],
-            },
-        ],
-    }
-}
+					"univ": {
+						"modifiers": [],
+						"course": "HUM 105"
+					},
+					"cc": {
+						"modifiers": [],
+						"name": "No Course Articulated"
+					}
+				},
 """
 class pair:
-    def __init__(self, u_course=[], c_course=[], u_r="and", c_r="and",):
-        self.univ_course = u_course
-        self.univ_r = u_r
-        self.cc_course = c_course
-        self.cc_r = c_r
+    def __init__(self, u_course=[], c_course=[],):
+        self.univ = u_course
+        #self.univ_r = u_r
+        self.cc = c_course
+        #self.cc_r = c_r
         """
         self.pair = {
             "univ": {
@@ -144,11 +96,11 @@ class pair:
 
 # relationship between a list of pairs
 class section:
-    def __init__(self, header="", info="null", pairs=[], next_relationship="and",):
-        self.header = header
+    def __init__(self, section_name="", info="null", articulations=[],):
+        self.section_name = section_name
         self.info = info
-        self.pairs = pairs
-        self.next_relationship = next_relationship
+        self.articulations = articulations
+        #self.next_relationship = next_relationship
         """
         self.section = {
             "section_name": self.header,
@@ -170,9 +122,9 @@ class sections(section):
         
 """
 class page:
-    def __init__(self, title={}, all_sections=[]):
-        self.title = title
-        self.all_sections = all_sections
+    def __init__(self, header={}, sections=[]):
+        self.header = header
+        self.sections = sections
         """
         self.overall = {
             "header": self.title,
