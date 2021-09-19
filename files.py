@@ -6,7 +6,7 @@ import base64
 from pathlib import Path
 
 def save_uploadedfile(uploadedfile):
-    with open(os.path.join(uploadedfile.name),"wb") as f:
+    with open(os.path.join("/tmp/", uploadedfile.name),"wb") as f:
         f.write(uploadedfile.getbuffer())
 
 def app():
@@ -36,41 +36,43 @@ def app():
         if submitted:
 
             i = 1
-            with ZipFile('parsed_json.zip', 'w') as zip:
-                with ZipFile('parsed_csv.zip', 'w') as zip2:
+            with ZipFile('/tmp/parsed_json.zip', 'w') as zip:
+                with ZipFile('/tmp/parsed_csv.zip', 'w') as zip2:
                     for uploaded_file in uploaded_files:
-                        df = read_table(uploaded_file.name)
-                        final_object = get_object(df, uploaded_file.name)
-                        get_json(final_object, str(i) + ".json")
-                        df.to_csv(str(i)+".csv")
-                        zip.write(str(i) + ".json")
-                        zip2.write(str(i) + ".csv")
-                        os.remove(str(i) + ".json")
-                        os.remove(str(i) + ".csv")
-                        os.remove(uploaded_file.name)
+                        df = read_table("/tmp/" + uploaded_file.name)
+                        final_object = get_object(df, "/tmp/" + uploaded_file.name)
+                        get_json(final_object, "/tmp/" + str(i) + ".json")
+                        df.to_csv("/tmp/" + str(i)+".csv")
+                        zip.write("/tmp/" + str(i) + ".json")
+                        zip2.write("/tmp/" + str(i) + ".csv")
+                        os.remove("/tmp/" + str(i) + ".json")
+                        os.remove("/tmp/" + str(i) + ".csv")
+                        os.remove("/tmp/" + uploaded_file.name)
                         i += 1
             st.balloons()
 
     col1, col2 = st.columns(2)
     
 
-    st.header("wait for the ballons to appear to download~")
-    with col1:
-        with open("parsed_json.zip", "rb") as f:
-            bytes = f.read()
-            b64 = base64.b64encode(bytes).decode()
-            href = f'<a href="data:file/zip;base64,{b64}" download=\'parsed_json.zip\'>\
-            2.Click to download JSON\
-            </a>'
-            st.markdown(href, unsafe_allow_html=True)
-    with col2:
-        with open("parsed_csv.zip", "rb") as f:
-            bytes = f.read()
-            b64 = base64.b64encode(bytes).decode()
-            href = f'<a href="data:file/zip;base64,{b64}" download=\'parsed_csv.zip\'>\
-            3.Click to download CSV\
-            </a>'
-            st.markdown(href, unsafe_allow_html=True)
+    try:
+        with col1:
+            with open("/tmp/parsed_json.zip", "rb") as f:
+                bytes = f.read()
+                b64 = base64.b64encode(bytes).decode()
+                href = f'<a href="data:file/zip;base64,{b64}" download=\'parsed_json.zip\'>\
+                2.Click to download JSON\
+                </a>'
+                st.markdown(href, unsafe_allow_html=True)
+        with col2:
+            with open("/tmp/parsed_csv.zip", "rb") as f:
+                bytes = f.read()
+                b64 = base64.b64encode(bytes).decode()
+                href = f'<a href="data:file/zip;base64,{b64}" download=\'parsed_csv.zip\'>\
+                3.Click to download CSV\
+                </a>'
+                st.markdown(href, unsafe_allow_html=True)
+    except FileNotFoundError as e:
+        st.header("wait for the ballonns to appear to download!")
     
         
 
