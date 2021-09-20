@@ -54,25 +54,48 @@ def app():
     col1, col2 = st.columns(2)
     
 
-    try:
-        with col1:
-            with open("/tmp/parsed_json.zip", "rb") as f:
-                bytes = f.read()
-                b64 = base64.b64encode(bytes).decode()
-                href = f'<a href="data:file/zip;base64,{b64}" download=\'parsed_json.zip\'>\
-                2.Click to download JSON\
-                </a>'
-                st.markdown(href, unsafe_allow_html=True)
+    try: 
+        with col1: 
+            if st.button("2. Click to download JSON"):
+                with open("/tmp/parsed_json.zip", "rb") as f:
+                    bytes = f.read()
+                    b64 = base64.b64encode(bytes).decode()
+                    href = f'<a href="data:file/zip;base64,{b64}" download=\'parsed_json.zip\'>\
+                    2.Click to download JSON\
+                    </a>'
+                    st.markdown(href, unsafe_allow_html=True)
         with col2:
-            with open("/tmp/parsed_csv.zip", "rb") as f:
-                bytes = f.read()
-                b64 = base64.b64encode(bytes).decode()
-                href = f'<a href="data:file/zip;base64,{b64}" download=\'parsed_csv.zip\'>\
-                3.Click to download CSV\
-                </a>'
-                st.markdown(href, unsafe_allow_html=True)
+            if st.button("3. Click to download CSV"):
+                with open("/tmp/parsed_csv.zip", "rb") as f:
+                    bytes = f.read()
+                    b64 = base64.b64encode(bytes).decode()
+                    href = f'<a href="data:file/zip;base64,{b64}" download=\'parsed_csv.zip\'>\
+                    3.Click to download CSV\
+                    </a>'
+                    st.markdown(href, unsafe_allow_html=True)
     except FileNotFoundError as e:
-        st.header("wait for the balloons to appear to download!")
+        st.header("wait for the buttons to appear to download!")
+
+    
+    # try:
+    #     with col1:
+    #         with open("/tmp/parsed_json.zip", "rb") as f:
+    #             bytes = f.read()
+    #             b64 = base64.b64encode(bytes).decode()
+    #             href = f'<a href="data:file/zip;base64,{b64}" download=\'parsed_json.zip\'>\
+    #             2.Click to download JSON\
+    #             </a>'
+    #             st.markdown(href, unsafe_allow_html=True)
+    #     with col2:
+    #         with open("/tmp/parsed_csv.zip", "rb") as f:
+    #             bytes = f.read()
+    #             b64 = base64.b64encode(bytes).decode()
+    #             href = f'<a href="data:file/zip;base64,{b64}" download=\'parsed_csv.zip\'>\
+    #             3.Click to download CSV\
+    #             </a>'
+    #             st.markdown(href, unsafe_allow_html=True)
+    # except FileNotFoundError as e:
+    #     st.header("wait for the buttons to appear to download!")
     
         
 
