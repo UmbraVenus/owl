@@ -1,0 +1,766 @@
+{
+    "header": {
+        "source": "/tmp/3.pdf",
+        "university": "California State University, Northridge",
+        "college": "Santa Barbara City College",
+        "route": "LIBERAL STUDIES, B.A. - Option in Interdisciplinary Studies"
+    },
+    "sections": [
+        {
+            "section_name": "LOWER DIVISION MAJOR PREPARATION COURSES",
+            "info": "null",
+            "articulations": [
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "HUM 101"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "LOWER DIVISION MAJOR PREPARATION COURSES\u2190 No Course Articulated"
+                        }
+                    ]
+                }
+            ],
+            "next_relationship": "And"
+        },
+        {
+            "section_name": "PHILOSOPHY AND CULTURE",
+            "info": "Select 1 Course(s) from the following",
+            "articulations": [
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "CH S 111"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "CHST 131"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "HUM 105"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "LING 200"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "PHIL 165"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "PHIL 101"
+                        },
+                        {
+                            "modifers": [],
+                            "course": "PHIL 101H"
+                        }
+                    ],
+                    "cc_relationship": "Or"
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "PHIL 202"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "PHIL 201"
+                        }
+                    ]
+                }
+            ],
+            "next_relationship": "And"
+        },
+        {
+            "section_name": "SOCIAL SCIENCES",
+            "info": "Select 1 Course(s) from the following",
+            "articulations": [
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "ANTH 150"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "ECON 175"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "HIST 111"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "HIST 108"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "POLS 225"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "POLS 121"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "PSY 150"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "PSY 100"
+                        },
+                        {
+                            "modifers": [],
+                            "course": "PSY 100H"
+                        }
+                    ],
+                    "cc_relationship": "Or"
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "SOC 150"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "SOC 101"
+                        },
+                        {
+                            "modifers": [],
+                            "course": "SOC 101H"
+                        }
+                    ],
+                    "cc_relationship": "Or"
+                }
+            ],
+            "next_relationship": "And"
+        },
+        {
+            "section_name": "LANGUAGES OTHER THAN ENGLISH",
+            "info": "Select 1 Course(s) from the followingLANGUAGES OTHER THAN ENGLISH",
+            "articulations": [
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "ARMN 101"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "CHIN 101"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "CHIN 101"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "DEAF 160"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "ASL 101"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "FREN 101"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "FR 101"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "HEBR 101"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "HEBR 101"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "ITAL 101"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "ITAL 101"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "JAPN 101"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "JAPN 101"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "KOR 101"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "KOR 101"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "RUSS 101"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "SPAN 101"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "SPAN 101"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section_name": " **REFER TO TOP OF AGREEMENT** TRACK A: THE HUMANITIES",
+            "info": "null",
+            "articulations": [
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "HUM 105"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "HUM 106"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "ART 110"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "ART 103"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "ART 112"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "ART 215"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "ART 114"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "ART 108"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "MUS 105"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "MUS 110"
+                        }
+                    ],
+                    "next_relationship": "nan"
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "MUS 105"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "MUS 110"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "MUS 105"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "MUS 110"
+                        }
+                    ],
+                    "next_relationship": "nan"
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "MUS 105"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "MUS 110"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "TH 110"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "TA 103"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section_name": " **REFER TO TOP OF AGREEMENT** TRACK B: HUMAN RIGHTS",
+            "info": "null",
+            "articulations": [
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "SOC 150"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "SOC 101"
+                        },
+                        {
+                            "modifers": [],
+                            "course": "SOC 101H"
+                        }
+                    ],
+                    "cc_relationship": "Or"
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "PHIL 165"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "PHIL 101"
+                        },
+                        {
+                            "modifers": [],
+                            "course": "PHIL 101H"
+                        }
+                    ],
+                    "cc_relationship": "Or"
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "AFRS 271"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "BLST 101"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "AFRS 272"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "BLST 101"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "POLS 197"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section_name": " **REFER TO TOP OF AGREEMENT** TRACK C: SUSTAINABILITY",
+            "info": "null",
+            "articulations": [
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "RTM 251"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "URBS 150"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section_name": " **REFER TO TOP OF AGREEMENT** TRACK D: RUSSIAN STUDIES",
+            "info": "null",
+            "articulations": [
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "RUSS 101"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "RUSS 102"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "RUSS 201"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "RUSS 200"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "RUSS 202"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section_name": " **REFER TO TOP OF AGREEMENT** TRACK E: CHINA STUDIES",
+            "info": "null",
+            "articulations": [
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "CHIN 101"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "CHIN 101"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "CHIN 102"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "CHIN 102"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "CHIN 201"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "CHIN 103"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "CHIN 202"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

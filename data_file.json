@@ -1,1 +1,63 @@
-{"header": {"source": "owl/Student_TestSet/19.pdf", "university": "Humboldt State University", "college": "San Diego City College", "route": "Art B.A. - Art Studio Concentration"}, "sections": [{"section_name": "LOWER DIVISION CORE", "info": "null", "articulations": []}, {"section_name": "LOWER DIVISION STUDIO ELECTIVES", "info": "Select 12 Units from the followingLOWER DIVISION STUDIO ELECTIVES", "articulations": [{"univ": [{"modifers": [], "course": "ART 107"}], "cc": [{"modifers": [], "course": "No Course Articulated"}]}, {"univ": [{"modifers": [], "course": "ART 251"}], "cc": [{"modifers": [], "course": "PHOT 143"}]}, {"univ": [{"modifers": [], "course": "ART 282"}], "cc": [{"modifers": [], "course": "No Course Articulated"}]}]}]}
+{
+    "header": {
+        "source": "owl/Student_TestSet/19.pdf",
+        "university": "Humboldt State University",
+        "college": "San Diego City College",
+        "route": "Art B.A. - Art Studio Concentration"
+    },
+    "sections": [
+        {
+            "section_name": "LOWER DIVISION CORE",
+            "info": "null",
+            "articulations": []
+        },
+        {
+            "section_name": "LOWER DIVISION STUDIO ELECTIVES",
+            "info": "Select 12 Units from the followingLOWER DIVISION STUDIO ELECTIVES",
+            "articulations": [
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "ART 107"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "ART 251"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "PHOT 143"
+                        }
+                    ]
+                },
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "ART 282"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

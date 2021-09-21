@@ -1,0 +1,939 @@
+{
+	"header": {
+		"source": "/tmp/9.pdf",
+		"university": "California Polytechnic University, Pomona",
+		"college": "Santa Barbara City College",
+		"route": "Biology, B.S."
+	},
+	"sections": [
+		{
+			"section_name": "MAJOR REQUIRED",
+			"info": "(3.00)",
+			"articulations": [
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "PHL 2020"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "PHIL 111"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "MAT 1140"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "MATH 150"
+						}
+					],
+					"next_relationship": "Or"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "MAT 1140"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "MATH 150"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "MAT 1140"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "MATH 150"
+						}
+					],
+					"next_relationship": "Or"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "MAT 1140"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "MATH 150"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "STA 1300"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "PHY 1210L"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "PHYS 105"
+						}
+					],
+					"next_relationship": "Or"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "PHY 1210L"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "PHYS 105"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "PHY 1210L"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "PHYS 105"
+						}
+					],
+					"next_relationship": "Or"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "PHY 1220"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "PHYS 111"
+						},
+						{
+							"modifers": [],
+							"course": "PHYS 106"
+						}
+					],
+					"cc_relationship": "Or"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "PHY 1520"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "PHYS 122"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "PHY 1520"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "PHYS 122"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "PHY 1520"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "PHYS 122"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "PHY 1520"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "PHYS 122"
+						}
+					]
+				}
+			]
+		},
+		{
+			"section_name": " **REFER TO CATALOG**",
+			"info": "null",
+			"articulations": [
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "BIO 2060"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "BMS 127"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "BIO 2060"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "BMS 127"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "BIO 2060"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "BMS 127"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "nan"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "ZOOL 122"
+						}
+					],
+					"next_relationship": "Or"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "nan"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "ZOOL 122"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "nan"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "ZOOL 122"
+						}
+					],
+					"next_relationship": "Or"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "BIO 2020"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "This Course is Never Articulated"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "BIO 2020"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "This Course is Never Articulated"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "BIO 2020"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "This Course is Never Articulated"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "BIO 2350"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "BMS 108"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "BIO 2350"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "BMS 108"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "BIO 2350"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "BMS 108"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "BIO 2370"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "BIO 2370"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "BIO 2370"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "BIO 2380"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "BIO 2380"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "BIO 2380"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "BIO 2380"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					]
+				}
+			]
+		},
+		{
+			"section_name": "AMERICAN CULTURAL PERSPECTIVES (ACP) REQUIREMENT",
+			"info": "Select 1 Course(s) from the followingAMERICAN CULTURAL PERSPECTIVES (ACP) REQUIREMENT",
+			"articulations": [
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "ANT 1020"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "ANTH 103"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "ENG 2320"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "ENG 226"
+						},
+						{
+							"modifers": [],
+							"course": "ENG 226H"
+						}
+					],
+					"cc_relationship": "Or"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "ENG 2330"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "EWS 1400"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "EWS 1450"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "SOC 127"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "EWS 2900"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "HST 2202"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "HIST 102"
+						},
+						{
+							"modifers": [],
+							"course": "HIST 102H"
+						}
+					],
+					"cc_relationship": "Or"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "HST 2201"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "HIST 101"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "IGE 2200"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "IGE 2300"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "NTR 2280"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					]
+				}
+			]
+		},
+		{
+			"section_name": "END OF AGREEMENT",
+			"info": "nan",
+			"articulations": [
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "BIO 1220"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "BIO 1210"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "BIOL 101"
+						},
+						{
+							"modifers": [],
+							"course": "BIOL 102"
+						}
+					],
+					"cc_relationship": "And"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "BIO 2400"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "CHM 1220"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "CHEM 156"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "CHM 1220"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "CHEM 156"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "CHM 1220"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "CHEM 156"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "CHM 2010"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "Course(s) Denied: CHEM 211;CHEM 221;CHEM 212;CHEM 222;"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "CHM 2010"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "Course(s) Denied: CHEM 211;CHEM 221;CHEM 212;CHEM 222;"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "CHM 2010"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "Course(s) Denied: CHEM 211;CHEM 221;CHEM 212;CHEM 222;"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "CHM 3140"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "CHM 3140"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "CHM 3140"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "ENG 1101"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "ENG 1101"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "ENG 1101"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					],
+					"next_relationship": "nan"
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "ENG 1101"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "No Course Articulated"
+						}
+					]
+				},
+				{
+					"univ": [
+						{
+							"modifers": [],
+							"course": "ENG 1103"
+						}
+					],
+					"cc": [
+						{
+							"modifers": [],
+							"course": "ENG 110"
+						},
+						{
+							"modifers": [],
+							"course": "ENG 110H"
+						}
+					],
+					"cc_relationship": "Or"
+				}
+			]
+		}
+	]
+}

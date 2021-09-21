@@ -1,0 +1,50 @@
+{
+    "header": {
+        "source": "/tmp/8.pdf",
+        "university": "California State University, Fullerton",
+        "college": "Santa Barbara City College",
+        "route": "American Studies, B.A."
+    },
+    "sections": [
+        {
+            "section_name": "CORE REQUIREMENTS",
+            "info": "Select 12 Semester Unit(s) from the followingCORE REQUIREMENTS",
+            "articulations": [
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "AMST 201"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "No Course Articulated"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section_name": "REQUIRED FOR GRADUATION",
+            "info": "null",
+            "articulations": [
+                {
+                    "univ": [
+                        {
+                            "modifers": [],
+                            "course": "POSC 100"
+                        }
+                    ],
+                    "cc": [
+                        {
+                            "modifers": [],
+                            "course": "REQUIRED FOR GRADUATION\u2190 POLS 101"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
